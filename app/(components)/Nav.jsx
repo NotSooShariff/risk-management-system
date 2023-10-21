@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
+import RiskTrackrLogo from "~public/RiskTrackr"
 
 const Nav = () => {
   const [isDropdownShow, setDropdownShow] = useState(false)
@@ -29,7 +30,7 @@ const Nav = () => {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://RiskTrackr.com/" className="flex items-center">
           <Image
-            src="https://RiskTrackr.com/docs/images/logo.svg"
+            src={RiskTrackrLogo}
             alt="RiskTrackr Logo"
             width={100}
             height={100}
